@@ -1,8 +1,18 @@
 import React from 'react'
+import Basics from './Basics'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div
+    style={{
+      background:'url(https://plus.unsplash.com/premium_photo-1667587245819-2bea7a93e7a1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
+      backgroundSize:'cover',
+      backgroundRepeat:'no-repeat',
+
+    }}
+     className='w-full relative h-screen px-[20vw] flex flex-col  gap-[4vw] justify-center items-center bg-neutral-200'>
+      <Basics/>
+    </div>
   )
 }
 
