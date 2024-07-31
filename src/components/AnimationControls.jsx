@@ -19,7 +19,7 @@ const AnimationControls = () => {
     }
 
     return (
-        <div className='w-full h-max relative flex gap-[2vw] items-center p-[2vw]'>
+        <div className='w-max h-max relative flex gap-[2vw] items-center p-[2vw]'>
             <button onClick={handleClick} className='bg-neutral-300 w-max h-max px-[3vw] py-[1.2vw] text-[1.5vw]  font-semibold rounded uppercase'>box to circle</button>
             <motion.div
                 variants={change}

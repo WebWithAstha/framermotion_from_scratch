@@ -5,6 +5,7 @@ const Basics = () => {
     const [isVisible, setisVisible] = useState(false)
     return (
         <>
+        <div className="">
             <AnimatePresence mode="popLayout">
                 {
                     isVisible &&
@@ -39,8 +40,8 @@ const Basics = () => {
             </motion.div>
                 }
                 </AnimatePresence>
-            <motion.button layout onClick={e => setisVisible(!isVisible)} className='bg-neutral-300 w-max h-max px-[3vw] py-[1.2vw] text-[1.5vw]  font-semibold rounded uppercase'>show snake animation</motion.button>
-
+            <motion.button layout onClick={e => setisVisible(!isVisible)} className='bg-neutral-300 w-max h-max px-[1.6vw] py-[1.2vw] text-[1.5vw]  font-semibold rounded uppercase'>show/hide snake animation</motion.button>
+            </div>
         </>
 
     )
