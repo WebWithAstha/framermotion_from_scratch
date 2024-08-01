@@ -9,10 +9,14 @@ import React, { useEffect, useRef } from 'react'
 const Horizontal = () => {
 
     const ref = useRef(null)
-    const {scrollYProgress} = useScroll({target: ref})
+    let {scrollYProgress,scrollX,scrollY,scrollXProgress} = useScroll({target: ref})
+    const moveX = useTransform(scrollYProgress ,[0,1],["0%","-50%"])
+    // console.log(moveX)
     console.log(scrollYProgress)
-    const moveX = useTransform(scrollYProgress,[0,1],["0%","-100%"])
+    useEffect(()=>{
+        console.log("hey")
 
+    },[scrollYProgress])
 
 
 
@@ -34,7 +38,7 @@ const Horizontal = () => {
 
             <motion.div 
             style={{x:moveX,transition:".2s transform linear"}}
-            className="w-full h-screen flex gap-[2vw] items-center md:px-[4vw] px-[8vw]">
+            className="w-[500vw] md:w-[198vw] h-screen flex gap-[2vw] items-center md:px-[4vw] px-[8vw]">
                 {
                     dogImages.map((image, index) => (
                         <img key={index} className='md:w-[30vw] w-[80vw] h-[80vh] object-cover rounded-lg shrink-0' src={image} alt="" />
