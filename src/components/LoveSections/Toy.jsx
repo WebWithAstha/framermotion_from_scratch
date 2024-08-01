@@ -13,7 +13,7 @@ const Topbar = () => {
 
   return (
     <div className="w-full md:h-[70vh] h-max md:px-0 px-[8vw] flex justify-between items-center relative">
-      <img className='md:absolute  w-[20vw] md:w-[40vw] top-[2%] left-[10%] md:left-[25%] z-[9] mix-blend-multiply' src="https://rukminim2.flixcart.com/image/416/416/xif0q/baby-rattle/0/j/c/newborn-baby-dog-grey-hanging-pulling-developmental-toy-baby-moo-original-imah2d4wnya7duks.jpeg?q=70&crop=false" alt="" />
+      <img className=' w-[20vw] md:w-[14vw] md:ml-[10vw] z-[9] mix-blend-multiply' src="https://rukminim2.flixcart.com/image/416/416/xif0q/baby-rattle/0/j/c/newborn-baby-dog-grey-hanging-pulling-developmental-toy-baby-moo-original-imah2d4wnya7duks.jpeg?q=70&crop=false" alt="" />
       <motion.div className="md:absolute right-[4%] top-[20%] md:top-[30%]">
         <h1 className='text-[6vw] leading-none'>Oh, the</h1>
         <h1 className='text-[6vw] leading-none'><span className='text-[10vw]'> joy</span> of <span className='text-[10vw]'> toys!</span> </h1>
